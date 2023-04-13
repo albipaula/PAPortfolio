@@ -1,0 +1,213 @@
+$primaryColor:#d2ffc8;
+$secondColor: #E8E7F4;
+$thirdColor: #7778A6; 
+$yellow: #F3FA3A;
+$primaryColor-opacity: #006e5f76;
+
+*{
+  padding: 0;
+  margin: 0;
+ 
+}
+
+a {color: black;}
+
+body{ 
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+ 
+
+
+
+ 
+}
+
+.grid-container { 
+
+ 
+  display: grid;
+  grid-template-areas: 'menu menu menu menu'
+                        'header header header header'
+                        'title title title title'
+                        'services services services services'
+                        'main main main main'
+                        'section section section section'
+                        'contacto contacto contacto contacto'
+                        'footer footer footer footer';
+                        gap: 90px;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}         
+
+.header { 
+
+  grid-area: header;
+  padding-top: 15px;
+  height: 800px;
+  text-align: center;
+  padding: 15px;
+
+  h1{ padding: 25px; color: $yellow;}
+
+}
+
+.menu { 
+
+grid-area: menu;
+padding-top: 15px;
+padding: 50px;
+/* background: $primaryColor; */
+height: auto;
+list-style: none;
+text-decoration: none;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.main { 
+grid-area: main;
+height: 100%;
+display: flex;
+width: 100%;
+padding: 30px;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.title { 
+    grid-area: title;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.services { 
+grid-area: services;
+height: 300px;
+padding: 30px;
+display: flex;
+width: 100%;
+justify-content: space-around;
+
+h2 { display: inline-block;}
+
+div {  border: 2px solid rgba(128, 128, 128, 0.563); padding: 50px;}
+
+}
+section { 
+
+    grid-area: section;
+    height: 100%;
+    margin-top: 150px;
+}
+
+
+.contacto { 
+    grid-area: contacto;
+    display: flex;
+    align-items: center;
+    height: 600px;
+   
+    padding: 30px;
+ 
+}
+.footer { 
+  
+  background-color: $primaryColor; 
+  grid-area:footer;
+  height: 200px;
+}
+
+
+.menu-container { 
+
+display: flex;
+flex-direction: row;
+align-items: center;
+height: auto;
+
+
+
+li { 
+padding: 50px ;
+  justify-content: center;
+}
+
+}
+
+
+//// about me 
+
+.card{ 
+
+
+display: flex;
+gap: 20px;
+
+div { padding: 30px;}
+justify-content: center;
+align-items: center;
+
+p{ flex-wrap: wrap;}
+}
+
+
+.portfolio { 
+display: flex;
+flex-direction: row;
+
+  flex-wrap: wrap;
+
+
+}
+
+.card-column { 
+
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjeta { 
+
+margin: 20px;
+border: 2px solid black;
+
+}
+
+.card-w3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   width: 600px;
+    margin: auto;
+    text-align: center;
+
+
+  div, p , a , button {margin: 24px 0;}  
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: $primaryColor-opacity;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
