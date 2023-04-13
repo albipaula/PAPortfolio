@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #F3FA3A;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "menu header header header" "menu  main main main" "footer footer footer footer";
+  gap: 10px;
+}
+
+.header {
+  background: #006E60;
+  grid-area: header;
+  padding-top: 15px;
+  height: 250px;
+  text-align: center;
+  padding: 15px;
+}
+.header h1 {
+  padding: 25px;
+  color: #F3FA3A;
+}
+
+.menu {
+  grid-area: menu;
+  padding-top: 15px;
+  padding: 50px;
+  background: #006E60;
+  height: auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main {
+  grid-area: main;
+  height: auto;
+  background: rgba(0, 110, 95, 0.462745098);
+}
+
+.footer {
+  background-color: #006E60;
+  grid-area: footer;
+  height: 200px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.menu-container li {
+  padding: 50px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card div {
+  padding: 30px;
+}
+.card p {
+  flex-wrap: wrap;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.portfolio article {
+  max-width: 350px;
+  padding: 30px;
+}
+
+.card-column {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjeta {
+  margin: 20px;
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=css.stylesheet.css.map */

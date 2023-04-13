@@ -1,0 +1,125 @@
+
+$primaryColor:#006E60;
+$secondColor: #E8E7F4;
+$thirdColor: #7778A6; 
+$yellow: #F3FA3A;
+$primaryColor-opacity: #006e5f76;
+
+*{
+  padding: 0;
+  margin: 0;
+ 
+}
+
+a {color: #F3FA3A;}
+
+body{ 
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+ 
+}
+
+.grid-container { 
+
+ 
+  display: grid;
+  grid-template-areas: 'menu header header header'
+                        'menu  main main main'
+                        'footer footer footer footer';
+                        gap: 10px;
+
+}         
+
+.header { 
+  background: $primaryColor;
+  grid-area: header;
+  padding-top: 15px;
+  height: 250px;
+  text-align: center;
+  padding: 15px;
+
+  h1{ padding: 25px; color: $yellow;}
+
+}
+
+.menu { 
+
+grid-area: menu;
+padding-top: 15px;
+padding: 50px;
+background: $primaryColor;
+height: auto;
+list-style: none;
+text-decoration: none;
+
+}
+
+.main { 
+grid-area: main;
+height: auto;
+background: $primaryColor-opacity;
+
+}
+.footer { 
+  
+  background-color: $primaryColor; 
+  grid-area:footer;
+  height: 200px;
+}
+
+
+.menu-container { 
+
+display: flex;
+flex-direction: column;
+align-items: center;
+height: auto;
+
+
+
+li { 
+padding: 50px ;
+  justify-content: center;
+}
+
+}
+
+
+//// about me 
+
+.card{ 
+
+
+display: flex;
+gap: 20px;
+
+div { padding: 30px;}
+justify-content: center;
+align-items: center;
+
+p{ flex-wrap: wrap;}
+}
+
+
+.portfolio { 
+display: flex;
+flex-direction: row;
+
+  flex-wrap: wrap;
+
+ article { max-width:350px; padding: 30px;} 
+}
+
+.card-column { 
+
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjeta { 
+
+margin: 20px;
+border: 2px solid black;
+
+}
