@@ -14,42 +14,50 @@ a {color: black;}
 
 body{ 
   box-sizing: border-box;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC';
   font-size: 35px;
- 
-
-
-
- 
+  overflow-x:hidden;
 }
 
 .grid-container { 
 
- 
   display: grid;
   grid-template-areas: 'menu menu menu menu'
                         'header header header header'
                         'title title title title'
                         'services services services services'
-                        'main main main main'
+                        'skills skills skills skills'
                         'section section section section'
                         'contacto contacto contacto contacto'
                         'footer footer footer footer';
-                        gap: 90px;
-                        grid-template-columns: 1fr 1fr 1fr 1fr;
-
+                        gap: 20px;
+                      
 }         
 
 .header { 
 
   grid-area: header;
   padding-top: 15px;
-  height: 800px;
+  height: auto;
   text-align: center;
   padding: 15px;
 
   h1{ padding: 25px; color: $yellow;}
 
+}
+.logo-icon { margin-top:  -30px;}
+
+h2 { padding: 20px; text-align: center; }
+
+ hr {
+  height: 2px;
+  width: 50%;
+  background-color:$thirdColor;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .menu { 
@@ -58,24 +66,22 @@ grid-area: menu;
 padding-top: 15px;
 padding: 50px;
 /* background: $primaryColor; */
-height: auto;
+height: 100px;
 list-style: none;
 text-decoration: none;
-display: flex;
-flex-direction: row;
 justify-content: space-between;
+transform: translateY(-10px);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 
 }
 
-.main { 
-grid-area: main;
+.skills { 
+grid-area: skills;
 height: 100%;
-display: flex;
-width: 100%;
-padding: 30px;
-flex-direction: column;
+justify-content: space-around;
+width: 96%;
+padding: 30px 30px;
 align-items: center;
-
 
 }
 
@@ -88,39 +94,53 @@ align-items: center;
 
 .services { 
 grid-area: services;
-height: 300px;
+height: auto;
 padding: 30px;
-display: flex;
-width: 100%;
-justify-content: space-around;
 
-h2 { display: inline-block;}
 
-div {  border: 2px solid rgba(128, 128, 128, 0.563); padding: 50px;}
+.services-div  { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+
+p,img,h4 { text-align: center; padding: 5px;}
 
 }
-section { 
+div {  
+  border: 2px solid rgba(128, 128, 128, 0.563); 
+  padding: 50px; margin: 10px;} 
+
+}
+
+
+.portfolio-container { 
 
     grid-area: section;
-    height: 100%;
-    margin-top: 150px;
+    height: auto;
+    padding: 20px;
+  
 }
 
 
 .contacto { 
     grid-area: contacto;
-    display: flex;
-    align-items: center;
     height: 600px;
-   
+    width: 100%;
     padding: 30px;
- 
+
 }
 .footer { 
   
-  background-color: $primaryColor; 
+  background-color: $thirdColor; 
   grid-area:footer;
-  height: 200px;
+  height: auto;
+  width: 100%;
+  li, a { 
+    list-style: none;
+    text-decoration: none;
+    }
 }
 
 
@@ -147,10 +167,13 @@ padding: 50px ;
 
 
 display: flex;
+flex-direction: row;
+justify-content: space-around;
 gap: 20px;
 
+
 div { padding: 30px;}
-justify-content: center;
+
 align-items: center;
 
 p{ flex-wrap: wrap;}
@@ -159,9 +182,9 @@ p{ flex-wrap: wrap;}
 
 .portfolio { 
 display: flex;
+justify-content: space-evenly;
 flex-direction: row;
-
-  flex-wrap: wrap;
+flex-wrap: wrap;
 
 
 }
@@ -172,18 +195,16 @@ flex-direction: row;
   gap: 20px;
 }
 
-.tarjeta { 
 
-margin: 20px;
-border: 2px solid black;
-
-}
 
 .card-w3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   width: 600px;
-    margin: auto;
+    width: 500px;
+    margin: 20px;
     text-align: center;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    padding: 15px;
 
 
   div, p , a , button {margin: 24px 0;}  

@@ -1,6 +1,6 @@
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-    width: 50%;
+input[type=text], select, textarea  {
+    width: 60%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -8,6 +8,24 @@ input[type=text], select, textarea{
     resize: vertical;
   }
   
+/* Style inputs, select elements and textareas */
+input[type=email] {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.contacto-form { 
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
   /* Style the label to display next to the inputs */
   label {
     padding: 12px 12px 12px 0;
@@ -16,29 +34,25 @@ input[type=text], select, textarea{
   
   /* Style the submit button */
   input[type=submit] {
-    background-color: $primaryColor-opacity;
+    background-color: $thirdColor;
     color: white;
+    text-transform: uppercase;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+   
   }
   
   /* Style the container */
   .contacto-container {
     border-radius: 5px;
-   text-align: center;
-   width: 100%;
+    text-align: center;
+    width: 100%;
     padding: 20px;
   }
   
-  /* Floating column for labels: 25% width */
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
+
   
   /* Floating column for inputs: 75% width */
   .col-75 {
