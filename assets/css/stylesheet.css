@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .card {
@@ -48,10 +49,6 @@ body {
 .header h1 {
   padding: 25px;
   color: #8FA777;
-}
-
-.logo-icon {
-  margin-top: -50px;
 }
 
 h2 {
@@ -330,7 +327,7 @@ svg circle:nth-child(2) {
 .portfolio {
   flex-wrap: wrap;
   margin: 160px;
-  justify-content: none;
+  justify-content: center;
 }
 
 .card-column {
@@ -349,47 +346,75 @@ svg circle:nth-child(2) {
 .card-w3 .img-portfolio {
   filter: grayscale(100%);
 }
+.card-w3 img:hover {
+  filter: invert(0%);
+  animation-delay: 2s;
+  cursor: pointer;
+}
 .card-w3 div, .card-w3 p, .card-w3 a, .card-w3 button {
   margin: 24px 0;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 400px;
-  height: 400px;
-  perspective: 1000px;
-}
+/*     .flip-card {
+      background-color: transparent;
+      width: 400px;
+      height: 400px;
+      perspective: 1000px;
+    }
 
-.flip-card-inner {
-  position: relative;
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      transition: transform 10s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      color: black;
+    }
+
+    .flip-card-back {
+      color: white;
+      transform: rotateY(180deg);
+    }
+   */
+/* Style the button that is used to open and close the collapsible content */
+/* .collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
-  height: auto;
-  text-align: center;
-  transition: transform 0.3s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  color: black;
-}
-
-.flip-card-back {
-  color: white;
-  transform: rotateY(180deg);
-}
-
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+} */
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active, .collapsible:hover {
+  background-color: #ccc;
+} */
+/* Style the collapsible content. Note: hidden by default */
+/* .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+} */
 .contacto {
   grid-area: contacto;
   height: 600px;
@@ -475,10 +500,24 @@ input[type=submit] {
   grid-area: footer;
   height: 100%;
   width: 100%;
+  padding: 20px;
 }
 .footer li, .footer a {
   list-style: none;
   text-decoration: none;
+}
+
+.main {
+  grid-area: services;
+  padding: 70px;
+}
+
+.section-about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
