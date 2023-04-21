@@ -1,3 +1,12 @@
+.contacto { 
+  grid-area: contacto;
+  height: 600px;
+  width: 100%;
+  padding: 30px;
+
+}
+
+
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea  {
     width: 60%;
