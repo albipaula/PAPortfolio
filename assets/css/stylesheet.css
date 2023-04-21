@@ -120,17 +120,6 @@ hr {
   padding: 30px;
 }
 
-.footer {
-  background-color: #8FA777;
-  grid-area: footer;
-  height: auto;
-  width: 100%;
-}
-.footer li, .footer a {
-  list-style: none;
-  text-decoration: none;
-}
-
 .menu-container {
   display: flex;
   flex-direction: row;
@@ -143,10 +132,6 @@ hr {
 }
 
 .card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
   align-items: center;
 }
 .card div {
@@ -168,13 +153,11 @@ hr {
 }
 
 .card-w3 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 400px;
-  height: auto;
-  margin: 20px;
+  height: 400px;
+  margin: 2px;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
   text-align: center;
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   padding: 15px;
 }
 .card-w3 .img-portfolio {
@@ -186,7 +169,7 @@ hr {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 400px;
   height: 400px;
   perspective: 1000px;
 }
@@ -194,9 +177,9 @@ hr {
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 0.3s;
   transform-style: preserve-3d;
 }
 
@@ -213,7 +196,6 @@ hr {
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
 }
 
@@ -487,6 +469,16 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+.footer {
+  background-color: #8FA777;
+  grid-area: footer;
+  height: 100%;
+  width: 100%;
+}
+.footer li, .footer a {
+  list-style: none;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

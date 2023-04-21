@@ -1,0 +1,12 @@
+.footer { 
+  
+    background-color: $yellow; 
+    grid-area:footer;
+    height: 100%;
+    width: 100%;
+    li, a { 
+      list-style: none;
+      text-decoration: none;
+      }
+  }
+  
