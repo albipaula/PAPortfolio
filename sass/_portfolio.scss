@@ -5,7 +5,8 @@
     height: auto;
     padding: 20px;
     width: 100%;
-
+   // background: $primaryColor-opacity;
+    //box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
   
 }
 
@@ -13,7 +14,8 @@
 .portfolio { 
 
     flex-wrap: wrap;
-   
+ 
+
     justify-content: center;
 
     

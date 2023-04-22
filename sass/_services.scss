@@ -1,21 +1,21 @@
 
 .services { 
     grid-area: services;
-    height: 400px;
-    padding: 30px;
- 
-  
-    
+    height: auto;
+    padding: 10px;
+
     
     .services-div  { 
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      height: 400px;
+      height: 350px;
+      background: $primaryColor-opacity;
+      opacity: 90%;
     
     
-    p,img,h4 { text-align: center; padding: 5px;}
+    p,img,h4 { text-align: center; padding: 5px; ;}
     
     }
     div {  

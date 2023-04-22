@@ -2,11 +2,26 @@
     grid-area: skills;
     height: auto;
     justify-content: space-around;
-    width: 96%;
-    padding: 30px 30px;
+    width: 98%;
+    padding: 0px 30px;
     align-items: center;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+
 
     }
+.skills-container { 
+
+display: flex;
+width: 600px;
+flex-wrap: wrap;
+
+
+}    
     
     .title { 
         grid-area: title;
@@ -14,43 +29,12 @@
         text-align: center;
        
     }
+.aboutme { width: 50%; margin: 30px; 
 
+img { border-radius: 90%;}
+}
 
-    .main-container-skills {
-        position: relative;
-        width: 50%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-      }
-      
-      .main-container-skills .card1 {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        border-radius: 4px;
-        text-align: center;
-        overflow: hidden;
-        transition: 0.5s;
-      }
-      
-   
-      
-      .main-container-skills.card1:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -50%;
-        width: 100%;
-        height: 100%;
-        background: rgba(219, 210, 210, 0.03);
-        pointer-events: none;
-        z-index: 1;
-      }
-      
+  
       .percent {
         position: relative;
         width: 150px;
@@ -143,6 +127,14 @@
         stroke: $primaryColor;
       }
       .card1:nth-child(5) svg circle:nth-child(2) {
+        stroke-dashoffset: calc(440 - (440 * 60) / 100);
+        stroke: $primaryColor;
+      }
+      .card1:nth-child(6) svg circle:nth-child(2) {
+        stroke-dashoffset: calc(440 - (440 * 60) / 100);
+        stroke: $primaryColor;
+      }
+      .card1:nth-child(7) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 60) / 100);
         stroke: $primaryColor;
       }
