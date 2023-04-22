@@ -1,9 +1,10 @@
 
 .services { 
     grid-area: services;
-    height: auto;
+    height: 400px;
     padding: 30px;
-    margin: 160px;
+ 
+  
     
     
     .services-div  { 
@@ -11,6 +12,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      height: 400px;
     
     
     p,img,h4 { text-align: center; padding: 5px;}

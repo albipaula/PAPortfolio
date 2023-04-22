@@ -1,24 +1,24 @@
 .skills { 
     grid-area: skills;
-    height: 100%;
+    height: auto;
     justify-content: space-around;
     width: 96%;
     padding: 30px 30px;
     align-items: center;
-    
+
     }
     
     .title { 
         grid-area: title;
         width: 100%;
         text-align: center;
-        margin-bottom: -40px;
+       
     }
 
 
     .main-container-skills {
         position: relative;
-        width: 900px;
+        width: 50%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -26,8 +26,7 @@
       
       .main-container-skills .card1 {
         position: relative;
-        width: 250px;
-       
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,10 +37,7 @@
         transition: 0.5s;
       }
       
-      .main-container-skills .card1:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-      }
+   
       
       .main-container-skills.card1:before {
         content: '';
@@ -80,39 +76,31 @@
       .percent .number h2 {
         color: #131313;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 20px;
         transition: 0.5s;
       }
       
-      .card1:hover .percent .number h2 {
-        color: #fff;
-        font-size: 60px;
-      }
+    
       
       .percent .number h2 span {
         font-size: 24px;
         color: #010000;
       }
       
-      .card1:hover .percent .number h2 span {
-        color: #fff;
-        transition: 0.5s;
-      }
+  
       
       .text {
         position: relative;
         color: #101010;
         margin-top: 20px;
         font-weight: 700;
-        font-size: 38px;
+        font-size: 18px;
         letter-spacing: 1px;
         text-transform: uppercase;
         transition: 0.5s;
       }
       
-      .card1:hover .text {
-        color: #fff;
-      }
+ 
       
       svg {
         position: relative;

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="web design wordpress web develoeper">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,11 +78,13 @@
 
    </section>
 
-  <main class="skills">
+  <main class="skills flex-row">
 
-    <h2>SKILLS</h2>
-<article class="flex-row">
+    
+<article class="flex-column">
+  <h2>SKILLS</h2>
     <div class="main-container-skills">
+     
       <div class="card1">
         <div class="box">
           <div class="percent">
@@ -154,6 +157,15 @@
       </div>
     
     </div>
+  </article>
+
+  <article class="aboutme">
+    <h3>
+      About Me
+    </h3>
+
+    <img src="/images/desktop/paula-perfil.jpeg" width="100%" alt="">
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad amet libero facilis reprehenderit asperiores error laboriosam atque! Perspiciatis similique eligendi expedita vero sint error odit aspernatur. Omnis vitae culpa minus voluptas dolorum impedit hic possimus! Sunt, dignissimos minima alias odit quam explicabo. Illum sequi, molestiae in voluptate id dolor molestias repudiandae earum exercitationem, dignissimos saepe. Expedita soluta iure nostrum natus?</p>
   </article>
   </main>
 
@@ -261,7 +273,7 @@
 
 <h2>CONTACT ME</h2>
   <div class="contacto-container ">
-    <form action="mailto:albi.paula@gmail.com" method="post" enctype="text/plain"class="contacto-form">
+  <!--   <form action="https://formsubmit.co/203ab5aacdedf24712298ed3f1589310 " method="POST" enctype="text/plain"class="contacto-form">
         <div class="col-75">
           <div class="row">
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -282,7 +294,30 @@
           <input type="submit" value="send">
       
         </div>
-    </form>
+        
+    </form> -->
+
+    <div class="container">
+      <form target="_blank" action="https://formsubmit.co/203ab5aacdedf24712298ed3f1589310 "method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="button-form">Submit Form</button>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+
+
+      </form>
+    </div>
   </div>
     
 
