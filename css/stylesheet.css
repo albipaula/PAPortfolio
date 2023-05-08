@@ -7,12 +7,18 @@ a {
   color: black;
 }
 
+h1, h2, h3, a, p {
+  font-size: 35px;
+  line-height: 2rem;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Amatic SC";
-  font-size: 25px;
+  font-size: 35px;
   overflow-x: hidden;
-  background: url(/images/desktop/v720-nunny-05-abstractbackground.png);
+  background: white;
+  /*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
@@ -23,7 +29,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 h4 {
@@ -32,9 +38,13 @@ h4 {
   text-decoration: underline;
 }
 
+hr {
+  margin-left: 25px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(4, auto);
   grid-template-rows: 150px 400px repeat(5, auto);
   grid-template-areas: "menu menu menu menu" "header header header header" "services services services services" "skills skills skills skills" "section section section section" "contacto contacto contacto contacto" "footer footer footer footer";
   gap: 100px;
@@ -64,6 +74,16 @@ h4 {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "menu " "header" "services " "skills " "section " "contacto " "footer ";
+  }
+}
 .header {
   grid-area: header;
   padding-top: 15px;
@@ -114,7 +134,7 @@ hr {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/desktop/paula-perfil.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/desktop/Frame 1.png");
   /* Set a specific height */
   height: 400px;
   /* Position and center the image to scale nicely on all screens */
@@ -154,6 +174,7 @@ hr {
 
 .services {
   grid-area: services;
+  grid-column: 2/4;
   height: auto;
   padding: 10px;
 }
@@ -162,17 +183,19 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 350px;
-  background: #F9ECE5;
+  height: 450px;
+  width: 300px;
+  /*  background: $primaryColor-opacity; */
   opacity: 90%;
 }
 .services .services-div p, .services .services-div img, .services .services-div h4 {
   text-align: center;
   padding: 5px;
+  margin: 10px;
 }
 .services div {
   border: 2px solid rgba(128, 128, 128, 0.563);
-  padding: 50px;
+  padding: 10px;
   margin: 10px;
 }
 
@@ -186,13 +209,12 @@ hr {
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  /*  background: url(/images/desktop/Frame\ 1.png); */
 }
 
 .skills-container {
   display: flex;
-  width: 600px;
   flex-wrap: wrap;
 }
 
@@ -278,37 +300,37 @@ svg circle:nth-child(2) {
 
 .card1:nth-child(1) svg circle:nth-child(2) {
   stroke-dashoffset: 44;
-  stroke: #F0AA65;
+  stroke: #8FA777;
 }
 
 .card1:nth-child(2) svg circle:nth-child(2) {
   stroke-dashoffset: 66;
-  stroke: #F0AA65;
+  stroke: #8FA777;
 }
 
 .card1:nth-child(3) svg circle:nth-child(2) {
   stroke-dashoffset: 176;
-  stroke: #F0AA65;
+  stroke: #8FA777;
 }
 
 .card1:nth-child(4) svg circle:nth-child(2) {
   stroke-dashoffset: 176;
-  stroke: #F0AA65;
+  stroke: #8FA777;
 }
 
 .card1:nth-child(5) svg circle:nth-child(2) {
   stroke-dashoffset: 176;
-  stroke: #F0AA65;
+  stroke: #8FA777;
 }
 
 .card1:nth-child(6) svg circle:nth-child(2) {
   stroke-dashoffset: 176;
-  stroke: #F0AA65;
+  stroke: #8FA777;
 }
 
 .card1:nth-child(7) svg circle:nth-child(2) {
   stroke-dashoffset: 176;
-  stroke: #F0AA65;
+  stroke: #8FA777;
 }
 
 @media (max-width: 991px) {
@@ -339,7 +361,7 @@ svg circle:nth-child(2) {
 
 .card-w3 {
   width: 400px;
-  height: 400px;
+  height: 450px;
   margin: 2px;
   box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -419,7 +441,6 @@ svg circle:nth-child(2) {
 } */
 .contacto {
   grid-area: contacto;
-  height: 600px;
   width: 100%;
   padding: 30px;
 }
@@ -433,6 +454,7 @@ input[type=text], select, textarea {
   box-sizing: border-box;
   margin: 20px;
   resize: vertical;
+  font-size: 2rem;
 }
 
 /* Style inputs, select elements and textareas */
@@ -443,6 +465,7 @@ input[type=email] {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  font-size: 2rem;
 }
 
 .contacto-form {
@@ -494,6 +517,7 @@ input[type=submit] {
 .button-form {
   border: none;
   outline: 0;
+  font-size: 2rem;
   display: inline-block;
   margin-top: 30px;
   padding: 10px 25px;
@@ -517,13 +541,16 @@ input[type=submit] {
 .footer {
   background-color: #8FA777;
   grid-area: footer;
-  height: 100%;
-  width: 100%;
   padding: 20px;
 }
 .footer li, .footer a {
   list-style: none;
   text-decoration: none;
+  margin: 15px;
+}
+
+.logo-icon img {
+  border-radius: 120%;
 }
 
 .main {

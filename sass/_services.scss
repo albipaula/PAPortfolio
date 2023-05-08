@@ -1,6 +1,7 @@
 
 .services { 
     grid-area: services;
+    grid-column: 2/4;
     height: auto;
     padding: 10px;
 
@@ -10,16 +11,17 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      height: 350px;
-      background: $primaryColor-opacity;
+      height: 450px;
+      width: 300px;
+     /*  background: $primaryColor-opacity; */
       opacity: 90%;
     
     
-    p,img,h4 { text-align: center; padding: 5px; ;}
+    p,img,h4 { text-align: center; padding: 5px; margin: 10px;;}
     
     }
     div {  
       border: 2px solid rgba(128, 128, 128, 0.563); 
-      padding: 50px; margin: 10px;} 
+      padding: 10px; margin: 10px;} 
     
     }

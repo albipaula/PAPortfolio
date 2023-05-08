@@ -12,26 +12,39 @@ $primaryColor-opacity: #F9ECE5;
 
 a {color: black;}
 
+h1,h2, h3,a,p{ 
+  font-size: 35px;
+  line-height: 2rem;
+}
+
 body{ 
+
   box-sizing: border-box;
   font-family: 'Amatic SC';
-  font-size: 25px;
+  font-size: 35px;
   overflow-x:hidden;
-  background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ;
+  background: white;
+/*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
   background-repeat: no-repeat;
   background-size:cover;
   background-blend-mode:lighten; 
 }
 
 h1{ font-size: 35px;}
-h2 {font-size: 30px;}
-h4 { font-size: 25px; 
-  font-weight: 700; text-decoration: underline;}
+
+h2 {font-size: 3rem;}
+
+h4 { 
+  font-size: 25px; 
+  font-weight: 700; text-decoration: underline;
+}
+
+hr { margin-left: 25px;}
 
 .grid-container { 
 
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(4,auto);
   grid-template-rows: 150px 400px repeat(5,auto);
   grid-template-areas: 'menu menu menu menu'
                         'header header header header'
@@ -77,3 +90,18 @@ h4 { font-size: 25px;
 }
 
 
+@media screen  and (max-width: 600px){
+  
+  body { overflow-x: hidden;}
+  .grid-container { 
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7,auto);
+  grid-template-areas: 'menu '
+                        'header'
+                        'services '
+                        'skills '
+                        'section '
+                        'contacto '
+                        'footer ';
+  }
+}

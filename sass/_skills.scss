@@ -8,16 +8,15 @@
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+   align-items: center;
    
-
+   /*  background: url(/images/desktop/Frame\ 1.png); */
 
     }
 .skills-container { 
 
 display: flex;
-width: 600px;
+
 flex-wrap: wrap;
 
 
@@ -52,6 +51,7 @@ img { border-radius: 90%;}
         width: 100%;
         height: 100%;
         display: flex;
+
         justify-content: center;
         align-items: center;
         border-radius: 50%;
@@ -110,33 +110,33 @@ img { border-radius: 90%;}
       
       .card1:nth-child(1) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 90) / 100);
-        stroke: $primaryColor ;
+        stroke: $yellow ;
       }
       
       .card1:nth-child(2) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 85) / 100);
-        stroke: $primaryColor;
+        stroke: $yellow;
       }
       .card1:nth-child(3) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 60) / 100);
-        stroke: $primaryColor;
+        stroke: $yellow;
       }
       
       .card1:nth-child(4) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 60) / 100);
-        stroke: $primaryColor;
+        stroke: $yellow;
       }
       .card1:nth-child(5) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 60) / 100);
-        stroke: $primaryColor;
+        stroke: $yellow;
       }
       .card1:nth-child(6) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 60) / 100);
-        stroke: $primaryColor;
+        stroke: $yellow;
       }
       .card1:nth-child(7) svg circle:nth-child(2) {
         stroke-dashoffset: calc(440 - (440 * 60) / 100);
-        stroke: $primaryColor;
+        stroke: $yellow;
       }
       
       

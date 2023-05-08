@@ -1,6 +1,6 @@
 .contacto { 
   grid-area: contacto;
-  height: 600px;
+
   width: 100%;
   padding: 30px;
 
@@ -16,6 +16,7 @@ input[type=text], select, textarea  {
     box-sizing: border-box;
     margin: 20px;
     resize: vertical;
+    font-size: 2rem;
   }
   
 /* Style inputs, select elements and textareas */
@@ -26,6 +27,8 @@ input[type=email] {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  font-size: 2rem;
+
 }
 .contacto-form { 
 
@@ -81,6 +84,7 @@ align-items: center;
 
   .button-form {  border: none;
     outline: 0;
+    font-size: 2rem;
     display: inline-block;
     margin-top: 30px;
     padding: 10px 25px;
