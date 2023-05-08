@@ -4,7 +4,6 @@
     grid-area: section;
     height: auto;
     padding: 20px;
-    width: 100%;
    // background: $primaryColor-opacity;
     //box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
   
@@ -13,17 +12,13 @@
 
 .portfolio { 
 
-    flex-wrap: wrap;
- 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-    justify-content: center;
-
-    
-    
-    
     }
     
-    .card-column { 
+  .card-column { 
     
       flex-direction: column;
       gap: 20px;
@@ -41,12 +36,15 @@
     
     
           .img-portfolio { 
-             filter: grayscale(100%);}
+            filter: grayscale(100%);}
+            img:hover { 
+              filter: invert(0%);  
+              animation-delay: 2s; 
+              cursor: pointer; }
 
-             img:hover { filter: invert(0%);   animation-delay: 2s; cursor: pointer; }
-             
-           
-          div, p , a , button  {margin: 24px 0;}  
+
+          div, p , a , button  {
+            margin: 24px 0;}  
       }
       
   /*     .flip-card {

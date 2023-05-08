@@ -75,13 +75,16 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  html {
     overflow-x: hidden;
   }
   .grid-container {
     grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
     grid-template-areas: "menu " "header" "services " "skills " "section " "contacto " "footer ";
+  }
+  .footer {
+    display: hide;
   }
 }
 .header {
@@ -346,11 +349,11 @@ svg circle:nth-child(2) {
   grid-area: section;
   height: auto;
   padding: 20px;
-  width: 100%;
 }
 
 .portfolio {
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
 
@@ -441,7 +444,6 @@ svg circle:nth-child(2) {
 } */
 .contacto {
   grid-area: contacto;
-  width: 100%;
   padding: 30px;
 }
 
@@ -553,6 +555,11 @@ input[type=submit] {
   border-radius: 120%;
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    display: none;
+  }
+}
 .main {
   grid-area: services;
   padding: 70px;
