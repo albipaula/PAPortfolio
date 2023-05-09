@@ -7,23 +7,30 @@
       html { overflow-x: hidden;}
        .grid-container { 
        grid-template-columns: auto;
-       grid-template-rows: repeat(7,auto);
+       grid-template-rows: repeat(6,auto);
        grid-template-areas: 'menu '
                              'header'
                              'services '
                              'skills '
                              'section '
                              'contacto '
-                             'footer ';
+                             ;
        }
      
-       .footer { display: hide;}
+.footer { display: hide;}
 
-       .menu-container { display: none;}
-          .mobile { 
+.menu-container { display: none;}
+.mobile { 
            display: flex;
-        flex-direction: row;
+           flex-direction: row;
+          flex-wrap: wrap;}
 
-    flex-wrap: wrap;}
+.services { 
+      
+      grid-column: 1/2;
+  
+      .flex-row { flex-direction: column;}
+    
+    }
      
      }

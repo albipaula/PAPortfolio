@@ -1,22 +1,20 @@
 .skills { 
     grid-area: skills;
-    height: auto;
     justify-content: space-around;
-    width: 98%;
     padding: 0px 30px;
     align-items: center;
-    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
-   align-items: center;
-   
+    align-items: center;
+
    /*  background: url(/images/desktop/Frame\ 1.png); */
 
     }
 .skills-container { 
 
 display: flex;
-
+align-items: center;
+justify-content: center;
 flex-wrap: wrap;
 
 
