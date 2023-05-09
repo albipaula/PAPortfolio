@@ -3,13 +3,13 @@
     grid-area: services;
     grid-column: 2/4;
     padding: 10px;
-
+    margin-top: 10%;
     
     .services-div  { 
       display: flex;
       flex-direction: column;
       align-items: center;
-     
+    
       justify-content: space-around;
       height: 450px;
       width: 300px;

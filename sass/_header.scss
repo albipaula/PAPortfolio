@@ -53,15 +53,11 @@
         
 /* The hero image */
 .hero-image img {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
  
   filter: blur(2px);
-  /* Set a specific height */
-
 
 }
 
-/* Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
