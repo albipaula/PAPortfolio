@@ -74,23 +74,9 @@ hr {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 600px) {
-  html {
-    overflow-x: hidden;
-  }
-  .grid-container {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas: "menu " "header" "services " "skills " "section " "contacto " "footer ";
-  }
-  .footer {
-    display: hide;
-  }
-}
 .header {
   grid-area: header;
   padding-top: 15px;
-  height: auto;
   text-align: center;
   padding: 15px;
 }
@@ -573,13 +559,17 @@ input[type=submit] {
   align-items: center;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
   .grid-container {
-    display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 150px 400px repeat(5, auto);
-    grid-template-areas: "menu menu menu menu" "header header header header" "services services services services" "skills skills skills skills" "section section section section" "contacto contacto contacto contacto" "footer footer footer footer";
-    gap: 100px;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "menu " "header" "services " "skills " "section " "contacto " "footer ";
+  }
+  .footer {
+    display: hide;
   }
   .menu-container {
     display: none;
