@@ -5,12 +5,16 @@
     text-align: center;
     padding: 15px;
   
-    h1{ padding: 25px; color: $yellow;}
+    h1{ 
+      padding: 25px; 
+      color: $yellow;}
   
   }
   
   
-  h2 { padding: 20px; text-align: center; }
+  h2 { 
+    padding: 20px; 
+    text-align: center; }
   
    hr {
     height: 2px;
@@ -52,9 +56,13 @@
 
         
 /* The hero image */
-.hero-image img {
- 
-  filter: blur(2px);
+
+.hero-image {
+ width: auto;
+
+
+
+img {   filter: blur(2px);}
 
 }
 

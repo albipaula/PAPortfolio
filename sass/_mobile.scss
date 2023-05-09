@@ -16,7 +16,7 @@
                              'contacto '
                              ;
        }
-     
+     .hero-image img { display: none;}
 .footer { display: hide;}
 
 .menu-container { display: none;}
@@ -29,8 +29,11 @@
       
       grid-column: 1/2;
   
-      .flex-row { flex-direction: column;}
+   .services-container{ 
     
+    flex-direction: column; 
+    justify-content: center;
+     align-items: center;} 
     }
      
      }
