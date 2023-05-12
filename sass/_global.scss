@@ -12,16 +12,16 @@ $primaryColor-opacity: #F9ECE5;
 
 a {color: black;}
 
-h1,h2, h3,a,p{ 
-  font-size: 35px;
+a,p{ 
+  font-size: 1rem;
   line-height: 2rem;
 }
 
 body{ 
 
   box-sizing: border-box;
-  font-family: 'Amatic SC';
-  font-size: 35px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 25px;
   overflow-x:hidden;
   background: white;
 /*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
@@ -30,13 +30,13 @@ body{
   background-blend-mode:lighten; 
 }
 
-h1{ font-size: 35px;}
+h1{ font-size: 2.5rem; }
 
-h2 {font-size: 3rem;}
+h2 {font-size: 2rem; text-transform: capitalize;}
 
 h4 { 
-  font-size: 25px; 
-  font-weight: 700; text-decoration: underline;
+  font-size: 1.5rem; 
+  font-weight: 700; text-decoration: underline; 
 }
 
 hr { margin-left: 25px;}
