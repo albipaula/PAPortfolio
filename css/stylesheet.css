@@ -63,6 +63,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 45px;
 }
 
 .card {
@@ -202,6 +203,7 @@ hr {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .title {
@@ -290,7 +292,7 @@ svg circle:nth-child(2) {
 }
 
 .card1:nth-child(2) svg circle:nth-child(2) {
-  stroke-dashoffset: 66;
+  stroke-dashoffset: 44;
   stroke: #8FA777;
 }
 
@@ -300,7 +302,7 @@ svg circle:nth-child(2) {
 }
 
 .card1:nth-child(4) svg circle:nth-child(2) {
-  stroke-dashoffset: 176;
+  stroke-dashoffset: 88;
   stroke: #8FA777;
 }
 
@@ -310,12 +312,12 @@ svg circle:nth-child(2) {
 }
 
 .card1:nth-child(6) svg circle:nth-child(2) {
-  stroke-dashoffset: 176;
+  stroke-dashoffset: 88;
   stroke: #8FA777;
 }
 
 .card1:nth-child(7) svg circle:nth-child(2) {
-  stroke-dashoffset: 176;
+  stroke-dashoffset: 88;
   stroke: #8FA777;
 }
 
