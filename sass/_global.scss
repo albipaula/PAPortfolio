@@ -45,7 +45,7 @@ hr { margin-left: 25px;}
 
   display: grid;
   grid-template-columns: repeat(4,auto);
-  grid-template-rows: 150px 400px repeat(5,auto);
+  grid-template-rows:  250px repeat(6,auto);
   grid-template-areas: 'menu menu menu menu'
                         'header header header header'
                         'services services services services'
@@ -53,7 +53,7 @@ hr { margin-left: 25px;}
                         'section section section section'
                         'contacto contacto contacto contacto'
                         'footer footer footer footer';
-                        gap: 100px;
+                        gap: 20px;
                       
 }         
 
@@ -72,8 +72,8 @@ hr { margin-left: 25px;}
   display: flex;
   flex-direction: column;
   justify-content: center;
- align-items: center;
- gap: 45px;
+  align-items: center;
+  gap: 45px;
 }
 
 
