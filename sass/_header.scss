@@ -1,12 +1,10 @@
-.hero-mobile { display: none;}
+
 
 .header { 
 
-    grid-area: header;
     position: relative;
-    width: 100%;
     text-align: center;
-    padding: 15px;
+
   
     h1{ 
       padding: 25px; 
@@ -26,44 +24,13 @@
   }
 
 
-  .menu { 
-
-    grid-area: menu;
-    padding-top: 15px;
-    padding: 50px;
-    /* background: $primaryColor; */
-    
-    list-style: none;
-    text-decoration: none;
-    justify-content: space-around;
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    
-    }
-
-    .menu-container { 
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        
-        
-        
-        li { 
-        padding: 50px ;
-          justify-content: center;
-        }
-        
-        }
 
         
 /* The hero image */
 
-.hero-image {
- width: 100%;
+.hero-desktop { 
 
+max-width: 1200px;
 
 }
 

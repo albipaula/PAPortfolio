@@ -17,35 +17,35 @@
 </head>
 <body>
   
-<div class="grid-container">
+<section class="grid-container">
 
-  <menu class="menu flex-row"> 
+  <menu class="menu"> 
     
     <div class="logo-icon">
       <a href="/index.html"> <img src="./images/logo/logo-paw-albi.svg" width ="300px" height="300px" alt="logo-Paula-Albi"> 
- 
     </div>
-  <nav class="menu-container">
- <!--    <li>  <a href="#"> ABOUT ME</a> </li>  -->
-    <li>  <a href="#portfolio"> PORTFOLIO</a> </li> 
-    <li>  <a href="#contact"> CONTACT ME</a> </li> 
-    <li>   <a href="./images/Resume-WD.pdf" download="resume-Paula-Albi">DOWNLOAD RESUME    <!-- <a href="./pages/resume.html">RESUME</a>  --> </li> 
-  
-  </nav>
 
-  <div>
-    <li>  <a href="https://www.linkedin.com/in/albipaula/" target="_blank"  >  <img src="./images/icons/linkedin.png" width="50px" alt="" srcset=""></a> </li> 
-    <li>  <a href="mailto:albi.paula@gmail.com" > <img src="./images/icons/email.png"  width="50px" alt="" srcset=""></a> </li> 
-    <li>  <a href="https://github.com/albipaula" target="_blank"> <img src="./images/icons/github.png" width="50px" alt="" srcset=""> </a> </li> 
-  </div>
+    <nav class="menu-container">
+      <!--    <li>  <a href="#"> ABOUT ME</a> </li>  -->
+      <li>  <a href="#portfolio"> PORTFOLIO</a> </li> 
+      <li>  <a href="#contact"> CONTACT ME</a> </li> 
+      <li>  <a href="./images/Resume-WD.pdf" download="resume-Paula-Albi">DOWNLOAD RESUME    <!-- <a href="./pages/resume.html">RESUME</a>  --> </li> 
+  
+    </nav>
+
+    <div class="menu-container-social">
+      <li>  <a href="https://www.linkedin.com/in/albipaula/" target="_blank"  >  <img src="./images/icons/linkedin.png" width="50px" alt="" srcset=""></a> </li> 
+      <li>  <a href="mailto:albi.paula@gmail.com" > <img src="./images/icons/email.png"  width="50px" alt="" srcset=""></a> </li> 
+      <li>  <a href="https://github.com/albipaula" target="_blank"> <img src="./images/icons/github.png" width="50px" alt="" srcset=""> </a> </li> 
+    </div>
 
 </menu>
 
   <header class="header"> 
     <div class="hero-image">
       <img class="hero-desktop" src="./images/desktop/frame.png" alt="hero-image-paula-albi" >
-      <img class="hero-mobile" src="./images/mobile/hero-mobile.png" alt="hero-image-paula-albi" >
-
+      <img class="hero-mobile" src="./images/mobile/hero-mobile.png" alt="hero-image-paula-albi" width="100%" height="auto" >
+ 
       <div class="hero-text">
         <h1>I am Paula Albi</h1>
         <p>And I'm a Web Develoepr</p>
@@ -60,32 +60,32 @@
  
   <section class=" services">
     <h2>What can I do... </h2>
-<article class="services-container  ">
-  <div class="services-div">
-    <img src="./images/icons/coding.png" width= "100px" alt="cutom-web-page-icon">
-    <h4>Custom Web Page</h4>
-    <p> With a focus on tailoring designs to meet the unique needs and requirements of clients.</p>
-  </div>
-    <div class="services-div"> 
-      <img src="./images/icons/design.png" width= "100px" alt="responsive-design-icon">
-      <h4>Responsive Design</h4>
-      <p>Web designs that adapt to different screen sizes and resolutions, providing a seamless user experience across devices. </p>
-    </div>
-    
-    <div class="services-div"> 
-      <img src="./images/icons/cloud.png" width= "100px" alt="hosting-domain-icon">
-      <h4>Hosting & Domain</h4>
-      <p>  Support clients to choose the right package and domain name</p>
-    </div>
-    <div class="services-div">
-      <img src="./images/icons/browser.png" width= "100px" alt="web-maintenance">
-      <h4>Web Maitenance</h4>
-      <p>  Keep it updated and maintained to ensure it remains secure and performs well.</p>
-    </div>
+    <article class="services-container  ">
+      <div class="services-div">
+        <img src="./images/icons/coding.png" width= "100px" alt="cutom-web-page-icon">
+        <h4>Custom Web Page</h4>
+        <p> With a focus on tailoring designs to meet the unique needs and requirements of clients.</p>
+      </div>
+        <div class="services-div"> 
+          <img src="./images/icons/design.png" width= "100px" alt="responsive-design-icon">
+          <h4>Responsive Design</h4>
+          <p>Web designs that adapt to different screen sizes and resolutions, providing a seamless user experience across devices. </p>
+        </div>
 
-</article>
+        <div class="services-div"> 
+          <img src="./images/icons/cloud.png" width= "100px" alt="hosting-domain-icon">
+          <h4>Hosting & Domain</h4>
+          <p>  Support clients to choose the right package and domain name</p>
+        </div>
+        <div class="services-div">
+          <img src="./images/icons/browser.png" width= "100px" alt="web-maintenance">
+          <h4>Web Maitenance</h4>
+          <p>  Keep it updated and maintained to ensure it remains secure and performs well.</p>
+        </div>
 
-   </section>
+    </article>
+
+  </section>
 
   <main class="skills">
 
@@ -325,55 +325,25 @@
 
 <h2>Contact Me</h2>
   <div class="contacto-container ">
-  <!--   <form action="https://formsubmit.co/203ab5aacdedf24712298ed3f1589310 " method="POST" enctype="text/plain"class="contacto-form">
-        <div class="col-75">
-          <div class="row">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <form target="_blank" action="https://formsubmit.co/203ab5aacdedf24712298ed3f1589310 "method="POST">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
           </div>
         </div>
-        <div class="col-75">
-          <div class="row">
-            <input type="email" id="email" name="email" placeholder="e-mail..">
-          </div>
-        </div>
-
-        <div class="col-75">
-          <div class="row">
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <input type="submit" value="send">
-      
-        </div>
-        
-    </form> -->
-
-    <div class="container">
-      <form target="_blank" action="https://formsubmit.co/203ab5aacdedf24712298ed3f1589310 "method="POST">
-        <div class="form-group">
-          <div class="form-row">
-            <div class="col">
-              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-            </div>
-            <div class="col">
-              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-        </div>
-        <button type="submit" class="button-form">Send</button>
-        <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
-
-
-      </form>
-    </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="button-form">Send</button>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+    </form>
   </div>
     
-
-
 
 </section>
 
@@ -386,15 +356,15 @@
         <hr>
         <li>  <a href="./pages/projects.html"> DOWNLOAD RESUME </a> </li> 
         <hr>
-      <li>  <a href="./pages/about-me.html"> linkedin</a> </li> 
-      <hr>
-      <li>  <a href="#"> email</a> </li> 
-      <hr>
-      <li>  <a href="./pages/projects.html"> GITHUB</a> </li> 
-      <hr>
+        <li>  <a href="./pages/about-me.html"> linkedin</a> </li> 
+        <hr>
+        <li>  <a href="#"> email</a> </li> 
+        <hr>
+        <li>  <a href="./pages/projects.html"> GITHUB</a> </li> 
+        <hr>
     </div>
-      <nav>
-        
+
+      <div>
         <li>  <a href="./pages/projects.html"> SERVICES</a> </li> 
         <hr>
         <li>  <a href="./pages/about-me.html"> WEB DESIGN</a> </li> 
@@ -407,18 +377,18 @@
         <hr>
         <li>  <a href="./pages/about-me.html"> WEB MAINTENANCE</a> </li> 
         <hr>
-      
         <li>  <a href="#"> CONTACT ME</a> </li> 
         <hr>
-      </nav>
+      </div>
+
       <div class="logo-icon">
         <a  href="/index.html"><img src="./images/logo/logo-paw-albi.svg" width ="200px" height="200px" alt="logo-Paula-Albi"></a>
-  
       </div>
+      
     </footer>
 
 
-  </div>
+  </section>
 
 </body>
 </html>

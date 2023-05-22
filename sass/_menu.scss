@@ -1,0 +1,37 @@
+
+.menu { 
+
+   display: flex;
+   
+   align-items: center;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    
+   .menu-container-social { display: flex;}
+
+    .menu-container { 
+
+       display: flex;
+        
+        
+        
+        li { 
+        padding: 50px ;
+          justify-content: center;
+        }
+       
+        
+    
+        }}
+
+
+ // Large devices (desktops, 992px and up)
+@media screen and (min-width: 801px) { 
+    
+.menu-container{ display:inline-block;} 
+.hero-mobile { display: none;}
+.hero-desktop{ display: inline-block;}
+}       

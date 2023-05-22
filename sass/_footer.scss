@@ -3,7 +3,9 @@
     background-color: $yellow; 
     grid-area:footer;
     padding: 20px;
-
+    display: flex;
+    justify-content: space-around;
+    
     li, a {
 
       list-style: none;
@@ -17,10 +19,4 @@
 
 .logo-icon {
    img { border-radius: 120%;}
-  }
-
-  @media screen  and (max-width: 600px){
-
-    .footer { display: none;}
-
   }

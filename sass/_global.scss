@@ -3,6 +3,7 @@ $secondColor: #648DA4;
 $thirdColor: #D2D396; 
 $yellow: #8FA777;
 $primaryColor-opacity: #F9ECE5;
+$fontSize :25px;
 
 *{
   padding: 0;
@@ -17,48 +18,78 @@ a,p{
   line-height: 2rem;
 }
 
+html { overflow-x: hidden; box-sizing: border-box;}
+
 body{ 
 
-  box-sizing: border-box;
   font-family: 'Comfortaa', cursive;
-  font-size: 25px;
-  overflow-x:hidden;
   background: white;
 /*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-blend-mode:lighten; 
+
 }
 
-h1{ font-size: 2.5rem; }
+/* h1{ font-size: $fontSize; }
 
-h2 {font-size: 2rem; text-transform: capitalize;}
+h2 {
+    font-size: 2rem; 
+    text-transform: capitalize;
+  }
+h3 { font-size: 1.5rem;}
 
 h4 { 
   font-size: 1.5rem; 
   font-weight: 700; text-decoration: underline; 
-}
+} */
 
-hr { margin-left: 25px;}
 
 .grid-container { 
 
   display: grid;
-  grid-template-columns: repeat(4,auto);
-  grid-template-rows:  250px repeat(6,auto);
-  grid-template-areas: 'menu menu menu menu'
-                        'header header header header'
-                        'services services services services'
-                        'skills skills skills skills'
-                        'section section section section'
-                        'contacto contacto contacto contacto'
-                        'footer footer footer footer';
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7,auto);
+  grid-template-areas:  'menu '
+                        'header '
+                        'services '
+                        'skills '
+                        'portfolio '
+                        'contacto '
+                        'footer ';
                         gap: 20px;
-                      
+
 }         
 
 
-.flex-row {
+
+.menu { 
+
+grid-area: menu;}
+
+.header { 
+  grid-area: header;
+}  
+
+.services {
+   grid-area: services;
+  }
+
+.skills { 
+  grid-area: skills;
+}
+
+.portfolio-container {
+   grid-area: portfolio;
+  }
+.contacto {
+   grid-area: contacto;
+  }
+.footer { 
+  grid-area: footer;
+}
+.hero-desktop{
+  display: none;
+}
+
+/* .flex-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -75,7 +106,7 @@ hr { margin-left: 25px;}
   align-items: center;
   gap: 45px;
 }
-
+ */
 
 
 

@@ -1,9 +1,11 @@
 
 .portfolio-container { 
 
-    grid-area: section;
-    height: auto;
-    padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
    // background: $primaryColor-opacity;
     //box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
   
@@ -11,24 +13,19 @@
 
 
 .portfolio { 
-
+display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  
+    }
+    
 
-    }
-    
-  .card-column { 
-    
-      flex-direction: column;
-      gap: 20px;
-    }
-    
-    
-    
+  
     .card-w3 {
-        width: 400px;
-        height: 450px;
+        
+      max-width: 400px;
+        max-height: 450px;
         margin: 2px;
         box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
         text-align: center;
@@ -47,66 +44,4 @@
             margin: 24px 0;}  
       }
       
-  /*     .flip-card {
-        background-color: transparent;
-        width: 400px;
-        height: 400px;
-        perspective: 1000px;
-      }
-      
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        transition: transform 10s;
-        transform-style: preserve-3d;
-      }
-      
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
-      
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      
-      .flip-card-front {
-        color: black;
-      }
-      
-      .flip-card-back {
-        color: white;
-        transform: rotateY(180deg);
-      }
-     */
-
-     /* Style the button that is used to open and close the collapsible content */
-/* .collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-} */
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-/* .active, .collapsible:hover {
-  background-color: #ccc;
-} */
-
-/* Style the collapsible content. Note: hidden by default */
-/* .content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-} */
+ 

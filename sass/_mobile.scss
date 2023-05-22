@@ -2,10 +2,15 @@
 
 
 
-@media screen  and (max-width: 600px){
+@media screen  and   (max-width: 600px){
       .hero-desktop  { display: none;}
 
-html { overflow-x: hidden;}
+      
+
+        .menu { flex-direction: column; .menu-container {
+          display: none;}}
+
+body { overflow-x: hidden;}
 
 .grid-container { 
        grid-template-columns: auto;
@@ -14,43 +19,57 @@ html { overflow-x: hidden;}
                             'header'
                             'services '
                             'skills '
-                            'section '
+                            'portfolio'
                             'contacto '
-                            ;
+                            'footer'
+                            ; gap: 20px;
        }
     
-.footer { display: hide;}
-.hero-mobile{ 
-  display: block; 
-  width: 100%; 
-  height: auto;}
-.menu-container {
-  display: none;}
 
-.mobile { 
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;}
 
-    .hero-text {
+
+
+
+.hero-mobile { 
+
+max-width: 600px;
+
+}
+
+  .hero-text {
+    background: $primaryColor;
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    padding: 10px;
             text-align: center;
             position: absolute;
-            top: 84%;
+            top: 82%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
             font-size: 30px;
+            h1 { font-size: 42px;}
           }
           
 .services { 
-      
-      grid-column: 1/2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
    .services-container{ 
     
     flex-direction: column; 
     justify-content: center;
-     align-items: center;} 
+    align-items: center
+   ;} 
     }
      
+
+    .footer { 
+      flex-direction: column;
+      justify-content: center ;
+      align-items: center;}
      }
