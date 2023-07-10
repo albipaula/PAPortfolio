@@ -3,7 +3,7 @@ $secondColor: #648DA4;
 $thirdColor: #D2D396; 
 $yellow: #8FA777;
 $primaryColor-opacity: #F9ECE5;
-$fontSize :25px;
+$fontSize :20px;
 
 *{
   padding: 0;
@@ -22,15 +22,16 @@ html { overflow-x: hidden; box-sizing: border-box;}
 
 body{ 
 
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Ysabeau SC', sans-serif;
   background: white;
 /*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
 
 }
 
-h1{ font-size: $fontSize; }
+h1{ font-size: 32px; }
 
 h2 { 
+  font-size: 28px;
     text-transform: capitalize;
   }
 

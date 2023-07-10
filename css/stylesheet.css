@@ -18,16 +18,17 @@ html {
 }
 
 body {
-  font-family: "Comfortaa", cursive;
+  font-family: "Ysabeau SC", sans-serif;
   background: white;
   /*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 32px;
 }
 
 h2 {
+  font-size: 28px;
   text-transform: capitalize;
 }
 
@@ -110,8 +111,8 @@ h4 {
   list-style: none;
   text-decoration: none;
   justify-content: space-around;
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  /*     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+   */
 }
 .menu .menu-container-social {
   display: flex;
@@ -430,11 +431,13 @@ svg circle:nth-child(2) {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
 
 .card-w3 {
-  max-width: 400px;
-  max-height: 450px;
+  width: 500px;
+  min-width: 300px;
+  height: 550px;
   margin: 2px;
   box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -555,7 +558,6 @@ input[type=submit] {
   }
 }
 .footer {
-  background-color: #8FA777;
   grid-area: footer;
   padding: 20px;
   display: flex;
