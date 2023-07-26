@@ -1,29 +1,21 @@
+/************************** COLORS PALETTE ***************************/
+/************************** RESETING***************************/
 * {
   padding: 0;
   margin: 0;
 }
 
-a {
-  color: black;
-}
-
-a, p {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
 html {
-  overflow-x: hidden;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Amatic SC", cursive;
   background: white;
-  box-sizing: border-box;
-  /*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
 }
 
+/************************** HEADINGS AND TEXT PROPERTIES***************************/
 h1 {
   font-size: 42px;
 }
@@ -47,6 +39,15 @@ h4 {
   text-decoration: underline;
 }
 
+a {
+  color: black;
+}
+
+a, p {
+  line-height: 2rem;
+}
+
+/************************** LAYOUT***************************/
 .grid-container {
   display: grid;
   grid-template-columns: auto;
@@ -96,34 +97,6 @@ h4 {
 
 .hero-desktop {
   display: none;
-}
-
-/* .flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-
-.flex-column { 
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
-}
- */
-.card {
-  align-items: center;
-}
-.card div {
-  padding: 30px;
-}
-.card p {
-  flex-wrap: wrap;
 }
 
 .menu {
@@ -284,7 +257,7 @@ a.my-button:active {
     max-width: 600px;
   }
   .hero-text {
-    background: #F0AA65;
+    background: #a780a1;
     opacity: 0.9;
     width: 100%;
     height: auto;

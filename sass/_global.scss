@@ -1,54 +1,59 @@
-$primaryColor:#F0AA65;
-$secondColor: #648DA4;
-$thirdColor: #D2D396; 
-$yellow: #8FA777;
-$primaryColor-opacity: #F9ECE5;
-$fontSize :20px;
+/************************** COLORS PALETTE ***************************/
 
+$primaryColor:#a780a1;
+$secondColor:  white;
+$thirdColor: black; 
+
+/************************** RESETING***************************/
 *{
   padding: 0;
   margin: 0;
- 
 }
 
-a {color: black;}
-
-a,p{ 
-  font-size: 1rem;
-  line-height: 2rem;
+html { 
+  box-sizing: border-box;
+  overflow-x: hidden; 
 }
-
-html { overflow-x: hidden; box-sizing: border-box;}
 
 body{ 
 
   font-family: 'Amatic SC', cursive;
   background: white;
-  box-sizing: border-box;
-/*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
-
 }
+
+/************************** HEADINGS AND TEXT PROPERTIES***************************/
 
 h1{ font-size: 42px; }
 
 h2 { 
   font-size: 128px;
     text-transform: capitalize;
-   color: whitesmoke;
- 
+    color: whitesmoke;
     text-align: center;
-  }
+}
 
-  p { padding: 20px; color: white; font-size: 48px; line-height: 50px; }
+p { 
+  padding: 20px; 
+  color: white; 
+  font-size: 48px; 
+  line-height: 50px;
+}
 
 h4 { 
-
   font-weight: 700; text-decoration: underline; 
 }
 
+a {
+  color: black;
+}
+
+a,p{ 
+  line-height: 2rem;
+}
+
+/************************** LAYOUT***************************/
 
 .grid-container { 
-
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(9,auto);
@@ -62,7 +67,7 @@ h4 {
                         'form'
                         'footer ';
                         
-                        gap: 20px;
+  gap: 20px;
 
 }         
 .menu { 
@@ -77,22 +82,24 @@ grid-area: menu;}
 }  
 
 .services {
-   grid-area: services;
-  }
+  grid-area: services;
+}
 
 .skills { 
   grid-area: skills;
 }
 .contacto {
   grid-area: contacto;
- }
+}
 .portfolio-container {
-   grid-area: portfolio;
+  grid-area: portfolio;
   }
 
 .form { 
   grid-area: form;
-  h2 { color:#a780a1;}
+  h2 { 
+    color:#a780a1;
+  }
 }
 
 .footer { 
@@ -100,38 +107,6 @@ grid-area: menu;}
 }
 .hero-desktop{
   display: none;
-}
-
-/* .flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-
-.flex-column { 
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
-}
- */
-
-
-
-
-.card{ 
-
-
-  div { padding: 30px;}
-
-        align-items: center;
-
-  p{ flex-wrap: wrap;}
 }
 
 
