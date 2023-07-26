@@ -12,7 +12,7 @@
 
 body { overflow-x: hidden;}
 
-.grid-container { 
+/* .grid-container { 
        grid-template-columns: auto;
        grid-template-rows: repeat(6,auto);
        grid-template-areas: 'menu '
@@ -24,7 +24,7 @@ body { overflow-x: hidden;}
                             'footer'
                             ; gap: 20px;
        }
-    
+     */
 
 
 
@@ -52,7 +52,7 @@ max-width: 600px;
             h1 { font-size: 42px;}
           }
           
-.services { 
+/* .services { 
 
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@ max-width: 600px;
     justify-content: center;
     align-items: center
    ;} 
-    }
+    } */
      
 
     .footer { 

@@ -2,17 +2,19 @@
 .menu { 
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     list-style: none;
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: center;
+    z-index: 99;
 /*     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
  */    
    .menu-container-social { display: flex;}
 
     .menu-container { 
       display: flex;
-
+height: 400px;
         li { 
         padding: 50px ;
           justify-content: center;

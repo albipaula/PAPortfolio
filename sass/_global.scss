@@ -22,19 +22,24 @@ html { overflow-x: hidden; box-sizing: border-box;}
 
 body{ 
 
-  font-family: 'Ysabeau SC', sans-serif;
+  font-family: 'Amatic SC', cursive;
   background: white;
+  box-sizing: border-box;
 /*   background: url(/images/desktop/v720-nunny-05-abstractbackground.png) ; */
 
 }
 
-h1{ font-size: 32px; }
+h1{ font-size: 42px; }
 
 h2 { 
-  font-size: 28px;
+  font-size: 128px;
     text-transform: capitalize;
+   color: whitesmoke;
+ 
+    text-align: center;
   }
 
+  p { padding: 20px; color: white; font-size: 48px; line-height: 50px; }
 
 h4 { 
 
@@ -46,24 +51,27 @@ h4 {
 
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(7,auto);
+  grid-template-rows: repeat(9,auto);
   grid-template-areas:  'menu '
+                        'hero'
                         'header '
                         'services '
                         'skills '
-                        'portfolio '
                         'contacto '
+                        'portfolio '
+                        'form'
                         'footer ';
+                        
                         gap: 20px;
 
 }         
-
-
-
 .menu { 
 
 grid-area: menu;}
 
+.hero { 
+  grid-area: hero;
+}
 .header { 
   grid-area: header;
 }  
@@ -75,13 +83,18 @@ grid-area: menu;}
 .skills { 
   grid-area: skills;
 }
-
+.contacto {
+  grid-area: contacto;
+ }
 .portfolio-container {
    grid-area: portfolio;
   }
-.contacto {
-   grid-area: contacto;
-  }
+
+.form { 
+  grid-area: form;
+  h2 { color:#a780a1;}
+}
+
 .footer { 
   grid-area: footer;
 }
