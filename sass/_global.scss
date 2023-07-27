@@ -56,7 +56,7 @@ a,p{
 .grid-container { 
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(9,auto);
+  grid-template-rows: repeat(11,auto);
   grid-template-areas:  'menu '
                         'hero'
                         'header '
