@@ -1,0 +1,21 @@
+.about-me{
+    background-color: $primaryColor;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/desktop/about-me.png);
+  min-height: 75vh;
+    
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  
+  
+    h2 { margin-top: 100px;}
+  }
+  
+.about-me-paragraph{
+   
+    width: 50vw;
+
+    p { font-size: 28px; line-height: 50px;padding-top: 50px;}
+}

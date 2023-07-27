@@ -1,0 +1,25 @@
+.services1 {
+
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(/images/px-conversions/web-design.png);
+
+min-height: 500px;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+h2 { margin-top: 180px;}
+
+}
+
+.services-list { 
+  padding-top: 100px; 
+  color: white; 
+  font-size: 48px; 
+  display: flex;
+justify-content: space-around;
+  list-style: none;
+
+
+}
