@@ -1,6 +1,6 @@
 .services3 {
-    background-color: rgba(116, 83, 150, 0.712);
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/px-conversions/responsive-design.png);
+    background-color: $primaryColor;
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/px-conversions/responsive-design.png), $principalBg;
 min-height: 500px;
 background-attachment: fixed;
 background-position: center;
