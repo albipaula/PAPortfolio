@@ -54,7 +54,7 @@ a {
 
 .grid-container { 
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(11,auto);
   grid-template-areas:  'header '
                         'hero'
@@ -65,7 +65,6 @@ a {
                         'services5 '
                         'portfolio '
                         'aboutme'
-                        'contacto '
                         'form'
                         'footer ';
                         
@@ -101,10 +100,6 @@ grid-area: header;}
 .portfolio {
   grid-area: portfolio;
 
-  }
-
-  .contacto {
-    grid-area: contacto;
   }
 
 .about-me {
