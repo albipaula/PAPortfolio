@@ -1,26 +1,13 @@
 .services1 {
-
-
   background-color: $primaryColor;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bg/layout.webp), $principalBg;
-min-height: 75vh;
-  
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
+  min-height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 
-h2 { margin-top: 180px;}
-
-}
-
-.services-list { 
-  padding-top: 100px; 
-  color: white; 
-  font-size: 48px; 
-  display: flex;
-justify-content: space-around;
-  list-style: none;
-
+    h2 { margin-top: 180px;}
 
 }
+
