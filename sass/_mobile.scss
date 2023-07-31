@@ -3,73 +3,35 @@
 
 
 @media screen  and   (max-width: 600px){
-      .hero-desktop  { display: none;}
+    
+  
 
       
 
         .menu { flex-direction: column; .menu-container {
           display: none;}}
 
-body { overflow-x: hidden;}
+body { 
+  overflow-x: hidden; 
+  font-size: 20px;}
+ 
+h1 { font-size: 60px;}
+  h2 { font-size: 50px;}
 
-/* .grid-container { 
-       grid-template-columns: auto;
-       grid-template-rows: repeat(6,auto);
-       grid-template-areas: 'menu '
-                            'header'
-                            'services '
-                            'skills '
-                            'portfolio'
-                            'contacto '
-                            'footer'
-                            ; gap: 20px;
+  li { font-size: 40px;}
+ .card-w3 { width: 96vw;}
+.services-list { display: flex;  flex-direction:column; flex-wrap: wrap; justify-content: center; align-content: center;}
+
+ .grid-container { 
+      justify-content: center;
+      align-items: center;
+   
        }
-     */
+;
 
-
-
-
-
-.hero-mobile { 
-
-max-width: 600px;
-
-}
-
-  .hero-text {
-    background: $primaryColor;
-    opacity: 0.9;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-            text-align: center;
-            position: absolute;
-            top: 82%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 30px;
-            h1 { font-size: 42px;}
-          }
-          
-/* .services { 
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-   .services-container{ 
-    
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center
-   ;} 
-    } */
-     
 
     .footer { 
       flex-direction: column;
       justify-content: center ;
       align-items: center;}
-     }
+    }
