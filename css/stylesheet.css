@@ -185,6 +185,9 @@ a {
   .menu .menu-container {
     display: none;
   }
+  .parallax {
+    height: 500px;
+  }
   .parallax h2 {
     margin-top: 50px;
   }
