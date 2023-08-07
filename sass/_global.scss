@@ -61,7 +61,8 @@ a {
 }
 .parallax {
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), $principalBg;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  $principalBg;
 
     min-height: 500px;
     background-attachment: fixed;
