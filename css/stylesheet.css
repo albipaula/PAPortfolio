@@ -234,6 +234,7 @@ a {
   .services-list {
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 15px;
   }
   .contacto-container {
     /* .parallax { background-attachment: scroll  } */
