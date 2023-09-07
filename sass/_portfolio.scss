@@ -31,7 +31,35 @@
   padding-top: 100px;
   
 }
-  
+.languages-icons { 
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  li { list-style: none;}
+}  
+
+.modal-body { font-size: 20px; letter-spacing: 2px;}
+.btn-info {   background-color: #e575d2;
+  color: #fff;
+  width: 100px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+
+  border: 0px solid #000;
+  border-radius: 26px;
+
+&:hover { background-color: grey;}
+
+
+ }
+
+ .other-projects { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* .flip-card-inner { width: 300px;} */
 .card-w3 {
   

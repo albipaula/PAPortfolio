@@ -310,7 +310,7 @@ a {
 .my-button {
   background-color: #DBA7D2;
   color: #fff;
-  width: 200px;
+  width: 230px;
   font-size: 38px;
   font-weight: 400;
   font-style: normal;
@@ -402,6 +402,41 @@ a.my-button:active {
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+}
+
+.languages-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.languages-icons li {
+  list-style: none;
+}
+
+.modal-body {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.btn-info {
+  background-color: #e575d2;
+  color: #fff;
+  width: 100px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  border: 0px solid #000;
+  border-radius: 26px;
+}
+.btn-info:hover {
+  background-color: grey;
+}
+
+.other-projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* .flip-card-inner { width: 300px;} */
