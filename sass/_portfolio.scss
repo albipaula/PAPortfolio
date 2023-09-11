@@ -59,6 +59,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
+
+  .other-projects-list{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 30px; 
+    img { margin-left: 10px;}}
 }
 /* .flip-card-inner { width: 300px;} */
 .card-w3 {
