@@ -74,7 +74,24 @@ a {
 
     h2 { margin-top: 180px;   }
 }
+.cookies-module {
+	margin-top: -6850px; padding: 0 2rem; box-sizing: border-box;
+	width: 100%;
+  height: auto;
+	overflow: hidden;
+	position: fixed;
+	background-color: $primaryColor;
+	display: flex;
+   flex-flow: row nowrap;
+    justify-content: space-between; align-items: flex-start;
+	h3 {
+		margin: 0 0 .5rem; padding: 0;
+	
+	}
+p { font-size: 20px;}
+}
 
+.hide{ display: none;}
 /************************** LAYOUT***************************/
 
 .grid-container { 
@@ -202,5 +219,9 @@ grid-area: header;}
             transform: scale(1);
   }
 }
+
+
+/* cookies */
+
 
 

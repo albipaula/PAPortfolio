@@ -11,4 +11,33 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+
+// Obtén referencias a los elementos relevantes
+const aceptarCookies = document.getElementById("btn-accept");
+const declineCookies = document.getElementById("btn-decline")
+const modalCookies = document.getElementById("cookies-module");
+
+// Verifica si las cookies ya han sido aceptadas
+const cookiesAceptadas = localStorage.getItem("acept");
+
+// Si las cookies no se han aceptado y el modal existe, muestra el modal
+if (!cookiesAceptadas && modalCookies) {
+  modalCookies.classList.remove("hide");
 }
+
+// Agrega un evento al botón de aceptación de cookies
+aceptarCookies.addEventListener("click", () => {
+  // Registra la aceptación de cookies en el almacenamiento local
+  localStorage.setItem("acept", "true");
+
+  // Oculta el modal de cookies si existe
+  if (modalCookies) {
+    modalCookies.classList.add("hide");
+  }
+});
+
+})         
+
