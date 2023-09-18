@@ -25,6 +25,7 @@ h2 {
   text-transform: capitalize;
   color: whitesmoke;
   text-align: center;
+  font-weight: 700;
 }
 
 h3 {
@@ -535,6 +536,9 @@ a.my-button:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form h2 {
   color: #a780a1;
@@ -544,16 +548,16 @@ a.my-button:active {
 .contacto-container {
   text-align: center;
   padding: 50px;
+  width: 500px;
 }
 .contacto-container .my-button {
   margin: auto;
 }
 
 input, textarea {
-  width: 600px;
   height: auto;
   padding: 10px;
-  font-size: 30px;
+  font-size: 35px;
   margin: 5px;
 }
 

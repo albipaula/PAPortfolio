@@ -31,6 +31,7 @@ h2 {
     text-transform: capitalize;
     color: whitesmoke;
     text-align: center;
+    font-weight: 700;
   
 }
 
@@ -61,6 +62,8 @@ a {
 
 
 }
+
+
 .parallax {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
@@ -73,6 +76,7 @@ a {
     background-size: contain;
 
     h2 { margin-top: 180px;   }
+
 }
 .cookies-module {
 	margin-top: -6850px; padding: 0 2rem; box-sizing: border-box;
